@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Andada+Pro:ital,wght@0,400..840;1,400..840&family=Archivo:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Andada+Pro:ital,wght@0,400..840;1,400..840&family=Archivo:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url("../img/wallpaper.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+nav{
+    display: flex;
+    padding-left: 20%;
+    align-items: center;
+    width: 100%;
+    padding-top: 1%;
+}
+
+ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 6px;
+}
+
+li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    padding: 5px;
+    background-color: #ffffff40;
+    transition: transform 0.3s ease;
+}
+
+li:hover{
+    transform: scale(1.10);
+}
+
+.principal{
+    padding-top: 10%;
+    padding-left: 20%;
+     font-family: "Andada Pro", serif;
+}
+
+.principal h3{
+    font-size: 30px;
+    color: #fff;
+}
+
+.principal h1{
+    padding-top: 0.5%;
+    color: #fff;
+    font-size: 70px;
+    font-weight: 3px;
+}
+
+.principal p{
+    padding-top: 1.5%;
+    font-size: 23px;
+    color: #fff;
+}
+
+.btns{
+    padding-top: 2%;
+    text-transform: uppercase;
+}
+
+.btn-one{
+    display: inline-block;
+    padding: 15px;
+    background-color: #fff;
+    text-decoration: none;
+    color: #000;
+    text-transform: uppercase;
+    font-family: "Archivo", sans-serif;
+    font-weight: 600;
+    border-radius: 4px;
+    transition: transform 0.3s ease;
+}
+
+.btn-one:hover{
+    transform: scale(1.02);
+}
+
+.btn-two{
+    display: inline-block;
+    padding: 15px;
+    background-color: transparent;
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: "Archivo", sans-serif;
+    font-weight: 600;
+    border: 1px solid #fff;
+    border-radius: 4px;
+     transition: transform 0.3s ease;
+}
+
+.btn-two:hover{
+    transform: scale(1.02);
+}
+
+.img{
+    float: right;
+    margin-top: -450px;
+    padding-right: 25%;
+}
+
+
+
+
+
+/* MOBILE */
+
+@media (max-width: 767px){
+
+    nav{
+        justify-content: center;
+        padding: 20px;
+    }
+
+    ul{
+        display: none;
+    }
+
+    .logo{
+        margin: 0;
+    }
+
+    .principal{
+        padding: 40px 20px;
+        text-align: center;
+    }
+
+    .principal h3{
+        font-size: 20px;
+    }
+
+    .principal h1{
+        font-size: 42px;
+    }
+
+    .principal p{
+        font-size: 18px;
+        line-height: 1.6;
+    }
+
+    .btns{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+        margin-top: 30px;
+    }
+
+    .btn-one,
+    .btn-two{
+        width: 100%;
+        max-width: 300px;
+        text-align: center;
+    }
+
+    .img{
+        float: none;
+        margin: 40px auto 0;
+        padding: 0;
+        text-align: center;
+    }
+
+    .img img{
+        width: 90%;
+        max-width: 350px;
+    }
+
+}
+
+
+   /* TABLET */
+
+@media (min-width:768px) and (max-width:1023px){
+
+    nav{
+        padding: 25px 40px;
+    }
+
+    .principal{
+        padding: 60px 40px;
+    }
+
+    .principal h3{
+        font-size: 24px;
+    }
+
+    .principal h1{
+        font-size: 56px;
+    }
+
+    .principal p{
+        font-size: 20px;
+    }
+
+    .btns{
+        margin-top: 30px;
+    }
+
+    .img{
+        float: none;
+        margin-top: 50px;
+        padding: 0;
+        text-align: center;
+    }
+
+    .img img{
+        width: 70%;
+        max-width: 500px;
+    }
+
+}
